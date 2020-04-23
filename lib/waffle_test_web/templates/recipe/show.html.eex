@@ -9,7 +9,7 @@
 
   <li>
     <strong>Image:</strong>
-    <%= @recipe.image %>
+    <img class="card-img-top" src="<%= WaffleTest.ImageUploader.url({@recipe.image, @recipe}) %>" alt="Card image cap">
   </li>
 
 </ul>

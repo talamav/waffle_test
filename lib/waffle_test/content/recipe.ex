@@ -1,9 +1,10 @@
 defmodule WaffleTest.Content.Recipe do
   use Ecto.Schema
   import Ecto.Changeset
+  use Waffle.Ecto.Schema
 
   schema "recipes" do
-    field :image, :string
+    field :image, WaffleTest.ImageUploader.Type
     field :name, :string
 
     timestamps()

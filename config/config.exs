@@ -18,6 +18,9 @@ config :waffle_test, WaffleTestWeb.Endpoint,
   pubsub_server: WaffleTest.PubSub,
   live_view: [signing_salt: "EjOt5kdE"]
 
+config :ex_aws,
+  json_codec: Jason
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
